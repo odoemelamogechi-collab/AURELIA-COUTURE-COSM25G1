@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Couture | Board of Trustees</title>
+    <link rel="stylesheet" href="Board.css">
+
+</head>
+
+<body>
+
+    <!-- Marquee -->
+    <marquee behavior="scroll" direction="left">
+        🌟 Don’t Miss: Aurelia Couture Fashion Gala – Lagos, Dec 20th 2025 🌟 Lagos Fashion Week - Lagos, Dec 27th 2025 🌟 
+        Aurelia Couture Fashion Showcase - Abuja, 4th Jan 2026 🌟 Street Luxe Experience - Port-Harcourt, 31st Jan 2026 🌟 
+        Rep Your Culture Day - Jos, 5th Feb 2026 🌟
+    </marquee>
+    <hr>
+
+    <!-- Header with Logo Line -->
+    <header>
+        <h1>
+            <img src="L-logo.jpeg" width="80" height="80" alt="Aurelia Couture">
+            Aurelia Couture
+        </h1>
+
+        <h3><em>Many Minds . One Vision . Endless Style</em></h3>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="board.html" class="active">Board of Trustees</a></li>
+                <li><a href="event.html">Upcoming Events</a></li>
+                <li><a href="contact.html">Inquiries & Appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <section class="board">
+            <h2>Board of Trustees</h2>
+            <h3><em>Meet the brilliant minds behind Aurelia Couture</em></h3>     
+
+            <div class="trustees">
+                <!-- Trustee 1 -->
+                <div class="member">
+                    <img src="images 2/11.jpeg" width="150" height="150" alt="Trustee 1">
+                    <h3>Ameh Ogechi</h3>
+                    <p>Founder & CEO</p>
+                </div>
+
+                <!-- Trustee 2 -->
+                <div class="member">
+                    <img src="images 2/6.jpeg" width="150" height="150" alt="Trustee 2">
+                    <h3>Adeniran Daniel</h3>
+                    <p>Creative Director</p>
+                </div>
+
+                <!-- Trustee 3 -->
+                <div class="member">
+                    <img src="images 2/2.jpeg" width="150" height="150" alt="Trustee 3">
+                    <h3>Rita Esther</h3>
+                    <p>Marketing Head</p>
+                </div>
+
+                <!-- Trustee 4 -->
+                <div class="member">
+                    <img src="images 2/1.jpeg" width="150" height="150" alt="Trustee 4">
+                    <h3>David Owoicho Eigege</h3>
+                    <p>Art Director</p>
+                </div>
+
+                <!-- Trustee 5 -->
+                <div class="member">
+                    <img src="images 2/5.jpeg" width="150" height="150" alt="Trustee 5">
+                    <h3>Samuel Jonathan</h3>
+                    <p>Operations Lead</p>
+                </div>
+
+                <!-- Trustee 6 -->
+                <div class="member">
+                    <img src="images 2/10.jpeg" width="150" height="150" alt="Trustee 6">
+                    <h3>Fidel Mallam-Obi</h3>
+                    <p>Head of Production</p>
+                </div>
+
+                <!-- Trustee 7 -->
+                <div class="member">
+                    <img src="images 2/4.jpeg" width="150" height="150" alt="Trustee 7">
+                    <h3>Blessing igwe</h3>
+                    <p>Finance Manager</p>
+                </div>
+
+                <!-- Trustee 8 -->
+                <div class="member">
+                    <img src="images 2/7.jpeg" width="150" height="150" alt="Trustee 8">
+                    <h3>Anietie Ekwere</h3>
+                    <p>Customer Relations</p>
+                </div>
+
+                <!-- Trustee 9 -->
+                <div class="member">
+                    <img src="images 2/3.jpeg" width="150" height="150" alt="Trustee 9">
+                    <h3>Seun Ogunbowale</h3>
+                    <p>Logistics Manager</p>
+                </div>
+
+                <!-- Trustee 10 -->
+                <div class="member">
+                    <img src="images 2/9.jpeg" width="150" height="150" alt="Trustee 10">
+                    <h3>Gift Ebere Nwosu</h3>
+                    <p>Event Planner</p>
+                </div>
+
+
+                <!-- Trustee 15 -->
+                <div class="member">
+                    <img src="images 2/8.jpeg" width="150" height="150" alt="Trustee 15">
+                    <h3>Abiodun Alao</h3>
+                    <p>Technical Director</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aurelia Couture. All rights reserved. Designed for CSC 106/IFT 203 Lab.</p>
+    </footer>
+
+    <!-- Optional JavaScript Hover Effect -->
+    <script>
+        document.querySelectorAll('.member').forEach(member => {
+            member.addEventListener('mouseover', () => {
+                member.style.transform = 'scale(1.05)';
+                member.style.transition = '0.3s';
+            });
+            member.addEventListener('mouseout', () => {
+                member.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+</body>
+</html>

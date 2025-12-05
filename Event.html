@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Couture | Upcoming Events</title>
+    <link rel="stylesheet" href="Event.css">
+
+</head>
+
+<body>
+
+    <!-- Marquee -->
+    <marquee behavior="scroll" direction="left">
+        🌟 Don’t Miss: Aurelia Couture Fashion Gala – Lagos, Dec 20th 2025 🌟 Lagos Fashion Week - Lagos, Dec 27th 2025 🌟 
+        Aurelia Couture Fashion Showcase - Abuja, 4th Jan 2026 🌟 Street Luxe Experience - Port-Harcourt, 31st Jan 2026 🌟 
+        Rep Your Culture Day - Jos, 5th Feb 2026 🌟
+    </marquee>
+    <hr>
+
+    <!-- Header with Logo Line -->
+    <header>
+        <h1>
+            <img src="L-logo.jpeg" width="80" height="80" alt="Aurelia Couture">
+            Aurelia Couture
+        </h1>
+
+        <h3><em>Many Minds . One Vision . Endless Style</em></h3>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="board.html">Board of Trustees</a></li>
+                <li><a href="event.html" class="active">Upcoming Events</a></li>
+                <li><a href="contact.html">Inquiries & Appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <section class="events">
+            <h2>Upcoming Events</h2>
+
+            <div class="event-list">
+                <div class="event-card">
+                    <h3>Aurelia Couture Fashion Gala</h3>
+                    <p><strong>Date:</strong> December 20, 2025</p>
+                    <p><strong>Venue:</strong> Eko Hotel, Lagos</p>
+                    <p>Join us as we unveil our exclusive summer line in a night of glamour and fashion innovation.</p>
+                    <button onclick="alert('You have successfully registered for the Fashion Gala!')">Register Now</button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Lagos Fashion Week</h3>
+                    <p><strong>Date:</strong> December 27, 2025</p>
+                    <p><strong>Venue:</strong> Harbour Point, Lagos</p>
+                    <p>Redefining Luxury, One Runway at a Time.</p>
+                    <button onclick="alert('You have successfully registered for Lagos Fashion Week!')">Register Now</button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Design Tribe Fashion Showcase</h3>
+                    <p><strong>Date:</strong> January 4, 2026</p>
+                    <p><strong>Venue:</strong> Aurelia Couture Studio, Abuja</p>
+                    <p>Learn directly from our creative directors about the art of design and runway presentation.</p>
+                    <button onclick="alert('You have successfully registered for the Fashion Showcase!')">Register Now</button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Aurelia Couture Street Luxe Experience</h3>
+                    <p><strong>Date:</strong> January 31, 2026</p>
+                    <p><strong>Venue:</strong> EUI Center, Port-Harcourt</p>
+                    <p>Unleash the Luxe Within.</p>
+                    <button onclick="alert('You have successfully registered for Street Luxe Experience!')">Register Now</button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Aurelia Couture Rep Your Culture Day</h3>
+                    <p><strong>Date:</strong> February 5, 2026</p>
+                    <p><strong>Venue:</strong> Novel Suites, Jos</p>
+                    <p>Crafted in Culture. Designed for the World.</p>
+                    <button onclick="alert('You have successfully registered for Rep Your Culture Day!')">Register Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aurelia Couture. All rights reserved. Designed for CSC 106/IFT 203 Lab.</p>
+    </footer>
+
+    <!-- JavaScript Hover Effect for Event Cards -->
+    <script>
+        const cards = document.querySelectorAll('.event-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.backgroundColor = '#f4f4f4';
+                card.style.transition = '0.3s';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.backgroundColor = 'white';
+            });
+        });
+    </script>
+
+</body>
+</html>

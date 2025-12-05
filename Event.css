@@ -1,0 +1,231 @@
+:root {
+    --primary: #3b3b98;
+    --secondary: #f8f9fc;
+    --accent: #0e1f53;
+    --dark: #1b1b1b;
+    --soft-dark: #444;
+    --radius: 16px;
+    --shadow: 0 8px 20px rgba(0,0,0,0.12);
+    --transition: 0.3s ease;
+}
+
+/* BASIC */
+body {
+    background: #f4f5f9;
+}
+
+/* MARQUEE */
+marquee {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+header h3 {
+    margin-top: -10px;
+    color: var(--soft-dark);
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    color: var(--dark);
+    font-weight: 600;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+nav a:hover {
+    background: #0e1f53;
+    color: white;
+}
+
+nav a.active {
+    background: #0e1f53;
+    color: white;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px 60px;
+}
+
+.events h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: var(--primary);
+}
+
+/* EVENT GRID */
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 5px solid var(--primary);
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* TEXT */
+.event-card h3 {
+    margin-top: 0;
+    color: var(--dark);
+    font-size: 22px;
+}
+
+.event-card p {
+    color: var(--soft-dark);
+}
+
+/* BUTTON */
+button {
+    margin-top: 15px;
+    padding: 12px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background: black;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+/* Tablets */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 32px;
+        flex-direction: column;  /* Stack logo + text */
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 15px;
+    }
+
+    .events h2 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    marquee {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        gap: 6px;
+        flex-direction: column;
+    }
+
+    header h3 {
+        font-size: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    .event-card h3 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

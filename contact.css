@@ -1,0 +1,218 @@
+/*Global Styling*/
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f3f7ff, #eaf3ff);
+    color: #333;
+}
+
+/*Marquee*/
+marquee {
+    background: #1e3a8a;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #1e3a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 img {
+    margin-right: 10px;
+}
+
+header h3 {
+    margin-top: -8px;
+    color: #444;
+}
+
+/*Navigation*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #1e3a8a;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/*Main Section*/
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+main h2 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 28px;
+}
+
+main p {
+    text-align: center;
+    color: #555;
+}
+
+/*Form Styling*/
+form {
+    margin-top: 25px;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    margin-top: 6px;
+    font-size: 15px;
+    background: #f8fafc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #233b9e;
+    transition: 0.3s;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    margin: 30px 0;
+    color: #444;
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE DESIGN
+---------------------------------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h1 img {
+        width: 55px;
+        height: 55px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    marquee {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
